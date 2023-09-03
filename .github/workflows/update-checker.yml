@@ -16,6 +16,10 @@ env:
   REPO_BRANCH: master
 
 on:
+  push:
+    branches:
+      - main
+      - master
   schedule:
     - cron: 29 4 * * 2
 
